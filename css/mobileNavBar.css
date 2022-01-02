@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap'); 
+body{
+    overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Syne Mono', monospace;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding:2rem;
+    background: #40916c;
+
+}
+.menu-mobile{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-mobile div{
+    border-radius: 4px;
+    background:#000;
+    margin:3px 0;
+    height: 4px;
+    width: 100%;
+}
+.circle{
+    position: absolute;
+    display:flex;
+    transition: 0.5s cubic-bezier(0.37, 1.19, 1, -1.03);
+    transform: translateX(100%);
+    width: 0px;
+    height: 0px;
+    right: 0;
+    background: #95d5b2;
+    border-radius: 50% 0% 50% 50%;
+    font-size:0px;
+}
+.show{
+    width:500px;
+    height: 600px;
+    transform: translateX(50%);
+}
+
+.circle ul{
+    position: absolute;
+    top:40%;
+    left: 10%;
+    transition: 0.5s cubic-bezier(0.37, 1.19, 1, -1.03);
+}
+.circle ul li{
+    list-style: none;
+    font-size: 30px;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+.circle ul li:hover{
+    list-style: none;
+    font-size: 40px;
+}
